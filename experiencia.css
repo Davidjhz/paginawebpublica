@@ -1,0 +1,142 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: 'Segoe UI', sans-serif; 
+    line-height: 1.6; 
+    color: #333; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+}  
+
+.navbar {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 20px; 
+    border-bottom: 1px solid #007bff; 
+    background-color: #5ca7e4; 
+    flex-wrap: wrap; 
+}
+
+.nav-links { 
+    display: flex; 
+    list-style: none; 
+    gap: 40px; 
+}
+
+.nav-links a { 
+    text-decoration: none; 
+    color: #555; 
+    font-weight: 700; 
+    font-size: 1.3rem; 
+    transition: 0.3s; 
+}
+
+.nav-links a:hover { 
+    color: #ffffff; 
+}
+
+.hero, .seccion {
+    padding: 60px 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1, .seccion h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.cards, .tarjetas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.card, .card-exp {
+    background: #ffffff; 
+    border: 1px solid #5ca7e4; 
+    border-radius: 8px;
+    padding: 30px;
+    width: 300px; 
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px; 
+}
+
+.card:hover, .card-exp:hover {
+    transform: translateY(-10px);
+    background-color: #e1f0ff; 
+}
+
+.card h3, .card-exp h3 {
+    color: #007bff; 
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.meta-data {
+    color: #666;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.card p, .descripcion-card {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center; 
+    padding: 20px; 
+    background: #5ca7e4; 
+    font-size: 1.3rem; 
+    font-weight: 500; 
+    margin-top: auto; 
+}
+
+@media (max-width: 768px) {
+    .navbar { 
+        flex-direction: column; 
+        gap: 15px; 
+    }
+    
+    .nav-links { 
+        gap: 15px; 
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .card, .card-exp {
+        width: 100%; 
+    }
+    
+    .hero, .seccion {
+        padding: 40px 5%;
+    }
+
+    .descripcion { font-size: 1.2rem; } 
+    .btn { 
+        width: 100%; 
+        margin-right: 0; 
+    }
+    .botones { justify-content: center; } 
+    .redes-sociales { justify-content: center; } 
+    
+    footer { font-size: 1.2rem; } 
+}
